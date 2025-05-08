@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş Yap - OstAtheneum</title>
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css"> 
+    <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+    <style>
+        /* Giriş yap sayfasına özel stiller (temaya uyumlu olacak şekilde) */
+        .auth-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: var(--bg-color);
+        }
+
+        .auth-container {
+            background-color: var(--second-bg-color);
+            border-radius: 2rem;
+            padding: 3rem 4rem;
+            width: 400px;
+            text-align: center;
+            border: 2px solid var(--main-color);
+        }
+
+        .auth-container h2 {
+            font-size: 3rem;
+            color: var(--text-color);
+            margin-bottom: 2rem;
+        }
+
+        .auth-container .form-group {
+            margin-bottom: 2rem;
+            text-align: left;
+        }
+
+        .auth-container .form-group label {
+            display: block;
+            font-size: 1.6rem;
+            color: var(--text-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .auth-container .form-group input {
+            width: 100%;
+            padding: 1.5rem;
+            font-size: 1.6rem;
+            color: var(--text-color);
+            background-color: #222;
+            border-radius: 1rem;
+            border: 1px solid #444;
+            box-sizing: border-box;
+        }
+
+        .auth-container .form-group input:focus {
+            border-color: var(--main-color);
+            outline: none;
+        }
+
+        .auth-container .btn {
+            width: 100%;
+            padding: 1.5rem;
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: black;
+            background-color: var(--main-color);
+            border-radius: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .auth-container .btn:hover {
+            background-color: #ff8c00;
+        }
+
+        .auth-container .auth-link {
+            margin-top: 1.5rem;
+            font-size: 1.4rem;
+            color: var(--text-color);
+        }
+
+        .auth-container .auth-link a {
+            color: var(--main-color);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <section class="auth-section">
+        <div class="auth-container">
+            <h2>Giriş Yap</h2>
+            <form action="/login" method="POST"> <div class="form-group">
+                    <label for="username">Kullanıcı Adı veya E-posta</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Şifre</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                
+                <button type="submit" class="btn">Giriş Yap</button>
+                <p class="auth-link">Hesabınız yok mu? <a href="kayıt.html">Kayıt Ol</a></p>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="social">
+          <a href="https://www.instagram.com/ostatheneum?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="blank"> <i class="bx bxl-instagram"></i> </a>
+          <a href="https://x.com/OstAtheneum" target="_blank"> <i class="bx bxl-twitter"></i> </a>
+          <a href="#" target="_blank"> <i class="bx bxl-facebook"></i> </a>
+        </div>
+    
+        <ul class="list">
+          <li>
+            <a href="#home">Ana Sayfa</a>
+          </li>
+          <li>
+            <a href="#education">İçerikler</a>
+          </li>
+          <li>
+            <a href="#services">Hizmetler</a>
+          </li>
+        </ul>
+    
+        <p class="copyright">
+          &copy;Ost<span>Atheneum</span> | Tüm Hakları Saklıdır
+        </p>
+      </footer>
+    <header class="header">
+        <a href="proje.html" class="logo">Ost<span>Atheneum</span> </a>
+
+        <nav class="navbar">
+            <a href="proje.html" class="active">Ana Sayfa</a>
+            </nav>
+    </header>
+</body>
+</html>
